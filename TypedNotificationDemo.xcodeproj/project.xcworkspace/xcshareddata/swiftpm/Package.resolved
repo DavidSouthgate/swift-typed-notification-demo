@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TypedNotification",
+        "repositoryURL": "git@bitbucket.org:davidksouthgate/swift-typed-notification.git",
+        "state": {
+          "branch": null,
+          "revision": "b0fe4e952028c838e3c521269b37db2d092465d4",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

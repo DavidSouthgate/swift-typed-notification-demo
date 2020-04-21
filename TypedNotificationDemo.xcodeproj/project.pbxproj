@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A6511A2422B6050099AAF7 /* TypedNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A651192422B6050099AAF7 /* TypedNotification.framework */; };
-		03A6511B2422B6050099AAF7 /* TypedNotification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03A651192422B6050099AAF7 /* TypedNotification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		032413DE244F6C660026D769 /* TypedNotification in Frameworks */ = {isa = PBXBuildFile; productRef = 032413DD244F6C660026D769 /* TypedNotification */; };
 		03E6874B2422A7D3001AAC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874A2422A7D3001AAC18 /* AppDelegate.swift */; };
 		03E6874D2422A7D3001AAC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874C2422A7D3001AAC18 /* SceneDelegate.swift */; };
 		03E6874F2422A7D3001AAC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874E2422A7D3001AAC18 /* ViewController.swift */; };
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				03A6511B2422B6050099AAF7 /* TypedNotification.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03A651192422B6050099AAF7 /* TypedNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TypedNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E687472422A7D3001AAC18 /* TypedNotificationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypedNotificationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E6874A2422A7D3001AAC18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E6874C2422A7D3001AAC18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A6511A2422B6050099AAF7 /* TypedNotification.framework in Frameworks */,
+				032413DE244F6C660026D769 /* TypedNotification in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +89,6 @@
 		03E6876A2422A8E7001AAC18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03A651192422B6050099AAF7 /* TypedNotification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +110,9 @@
 			dependencies = (
 			);
 			name = TypedNotificationDemo;
+			packageProductDependencies = (
+				032413DD244F6C660026D769 /* TypedNotification */,
+			);
 			productName = TypedNotificationDemo;
 			productReference = 03E687472422A7D3001AAC18 /* TypedNotificationDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 03E6873E2422A7D3001AAC18;
+			packageReferences = (
+				032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */,
+			);
 			productRefGroup = 03E687482422A7D3001AAC18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@bitbucket.org:davidksouthgate/swift-typed-notification.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		032413DD244F6C660026D769 /* TypedNotification */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */;
+			productName = TypedNotification;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03E6873F2422A7D3001AAC18 /* Project object */;
 }
