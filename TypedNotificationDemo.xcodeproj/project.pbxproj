@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032413DE244F6C660026D769 /* TypedNotification in Frameworks */ = {isa = PBXBuildFile; productRef = 032413DD244F6C660026D769 /* TypedNotification */; };
+		038712F0254627B3002212CA /* TypedNotification in Frameworks */ = {isa = PBXBuildFile; productRef = 038712EF254627B3002212CA /* TypedNotification */; };
 		03E6874B2422A7D3001AAC18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874A2422A7D3001AAC18 /* AppDelegate.swift */; };
 		03E6874D2422A7D3001AAC18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874C2422A7D3001AAC18 /* SceneDelegate.swift */; };
 		03E6874F2422A7D3001AAC18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6874E2422A7D3001AAC18 /* ViewController.swift */; };
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032413DE244F6C660026D769 /* TypedNotification in Frameworks */,
+				038712F0254627B3002212CA /* TypedNotification in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +111,7 @@
 			);
 			name = TypedNotificationDemo;
 			packageProductDependencies = (
-				032413DD244F6C660026D769 /* TypedNotification */,
+				038712EF254627B3002212CA /* TypedNotification */,
 			);
 			productName = TypedNotificationDemo;
 			productReference = 03E687472422A7D3001AAC18 /* TypedNotificationDemo.app */;
@@ -142,7 +142,7 @@
 			);
 			mainGroup = 03E6873E2422A7D3001AAC18;
 			packageReferences = (
-				032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */,
+				038712EE254627B3002212CA /* XCRemoteSwiftPackageReference "swift-typed-notification" */,
 			);
 			productRefGroup = 03E687482422A7D3001AAC18 /* Products */;
 			projectDirPath = "";
@@ -378,20 +378,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */ = {
+		038712EE254627B3002212CA /* XCRemoteSwiftPackageReference "swift-typed-notification" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@bitbucket.org:davidksouthgate/swift-typed-notification.git";
+			repositoryURL = "git@gitlab.com:southgate/libraries/swift/swift-typed-notification.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				minimumVersion = 0.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		032413DD244F6C660026D769 /* TypedNotification */ = {
+		038712EF254627B3002212CA /* TypedNotification */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 032413DC244F6C660026D769 /* XCRemoteSwiftPackageReference "swift-typed-notification" */;
+			package = 038712EE254627B3002212CA /* XCRemoteSwiftPackageReference "swift-typed-notification" */;
 			productName = TypedNotification;
 		};
 /* End XCSwiftPackageProductDependency section */
